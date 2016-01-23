@@ -1,4 +1,16 @@
-#body {
+/* 
+      7199A5, 77A8A8, 5B7348, BBBC9F, 8E432D
+*/
+.heading { 
+	background: transparent linear-gradient(to bottom, #7199A5 0%, #77A8A8 100%) repeat scroll 0% 0%;
+	color:#8E432D;
+	padding: 0.25em;
+}
+.subhead {
+
+}
+.container {
 	margin: 0 auto;
-	width: 960px;
+	padding: 0px 2em;
+	max-width: 56em;
 }
