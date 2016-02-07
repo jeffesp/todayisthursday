@@ -1,0 +1,70 @@
+/* base16 Atelier Lakeside */
+$base00: #161b1d; 
+$base01: #1f292e; 
+$base02: #516d7b; 
+$base03: #5a7b8c; 
+$base04: #7195a8; 
+$base05: #7ea2b4; 
+$base06: #c1e4f6; 
+$base07: #ebf8ff; 
+$base08: #d22d72; 
+$base09: #935c25; 
+$base0A: #8a8a0f; 
+$base0B: #568c3b; 
+$base0C: #2d8f6f; 
+$base0D: #257fad; 
+$base0E: #6b6bb8; 
+$base0F: #b72dd2; 
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: "Source Serif Pro";
+}
+pre {
+    font-family: "Source Code Pro";
+}
+body {
+    font-family: "Source Sans Pro";
+    font-size: 1.25em;
+    background-color: $base07;
+    color: $base01;
+}
+a {
+    color: $base0A;
+    &:visited { colort: $base0C; }
+    &:hover { color: $base0B; }
+}
+.container {
+    margin: 0 auto;
+    padding: 0px 2em;
+    max-width: 56em;
+}
+.heading {
+    color: $base08;
+    border-bottom: .1em solid $base02;
+    h1 { 
+        margin: .2em 0;
+    }
+}
+
+.menu {
+    ul {
+        padding: 0;
+        margin: .1em 0;
+    }
+
+    li {
+        display: inline;
+        padding: 0 .25em 0 0;
+
+        a { 
+            color: $base0C;
+            padding:.1em;
+            text-decoration: none;
+            &:visited { color: $base0C; }
+            &:hover { text-decoration: none; color: $base0C; background-color: $base06; border-radius: .17em; }
+        }
+    }
+}
+.content {
+
+}
