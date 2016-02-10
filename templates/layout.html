@@ -1,35 +1,28 @@
 <html> 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="//assets/site.css" type="text/css" />
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+  <link rel="stylesheet" href="/site.css" type="text/css" />
 </head>
-<body>
-$for(include-before)$
-$include-before$
-$endfor$
-$if(title)$
-<div id="$idprefix$header">
-<h2 class="title">$title$</h2>
-$for(author)$
-<h2 class="author">$author$</h2>
-$endfor$
-$if(date)$
-<h3 class="date">$date$</h3>
-$endif$
-</div>
-$endif$
-$if(toc)$
-<div id="$idprefix$TOC">
-$toc$
-</div>
-$endif$
-$body$
-$for(include-after)$
-$include-after$
-$endfor$
+<body class="container">
+    <header>
+        <h1>Today Is Thursday</h1>
+    </header>
+    $for(include-before)$
+    $include-before$
+    $endfor$
+
+    $body$
+
+    $for(include-after)$
+    $include-after$
+    $endfor$
 </body>
 </html>
