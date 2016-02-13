@@ -20,16 +20,17 @@ $base0F: #b72dd2;
 $baseColor: $base07;
 $textColor: $base01;
 $highlight: $base0B;
-$secondary: $base0D;
+$secondary: $base0C;
 
 h1, h2, h3, h4, h5, h6 { 
     font-family: "Source Serif Pro";
 }
-pre {
+pre, code {
     font-family: "Source Code Pro";
 }
 body {
     font-family: "Source Sans Pro";
+    line-height: 1.25;
     background-color: $baseColor;
     color: $textColor;
 }

@@ -1,28 +1,36 @@
 <html> 
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
-$if(highlighting-css)$
-  <style type="text/css">
-$highlighting-css$
-  </style>
-$endif$
-  <link rel="stylesheet" href="/site.css" type="text/css" />
-</head>
-<body class="container">
-    <header>
-        <h1>Today Is Thursday</h1>
-    </header>
-    $for(include-before)$
-    $include-before$
-    $endfor$
-
-    $body$
-
-    $for(include-after)$
-    $include-after$
-    $endfor$
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="pandoc" />
+        <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+        <style type="text/css">code{white-space: pre;}</style>
+        $if(highlighting-css)$
+        <style type="text/css">
+        $highlighting-css$
+        </style>
+        $endif$
+        <link rel="stylesheet" href="/site.css" type="text/css" />
+    </head>
+    <body class="container">
+        <header>
+            <h1>Today Is Thursday</h1>
+        </header>
+        <article>
+            <header>
+                <h2>$title$</h2>
+                <time>$date$</time>
+                <address class="author">by <a rel="author" href="about.html">$author$</a></address>
+            </header>
+            $body$
+        </article>
+        <footer>
+            <div class="menu">
+                <ul>
+                    <li><a href="/index.html" class="menu-link">Home</a></li>
+                    <li><a href="/about.html" class="menu-link">About</a></li>
+                    <li><a href="/history.html" class="menu-link">History</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
