@@ -2,7 +2,7 @@
 title: Unit Tester's Creed
 author: Jeff Esp
 date: 2016-02-09
----
+...
 
 When writing some testing code, I found I needed a test string. For whatever
 reason my mind jumped to the [Rifleman's Creed][creed] as popularized in [Full
